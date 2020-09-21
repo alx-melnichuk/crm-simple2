@@ -18,8 +18,8 @@ Let us indicate briefly:
 
 Create a directory for the project go to it:
 ```bash
-$ mkdir /home/alexey/ws_ts3/crm-simple1/
-$ cd /home/alexey/ws_ts3/crm-simple1/
+$ mkdir /home/alexey/ws_ts3/crm-simple2/
+$ cd /home/alexey/ws_ts3/crm-simple2/
 ```
 Copy the project files from the previous article into it [github-crm-simple1](https://github.com/alx-melnichuk/crm-simple1). However, you can delete the files `img-*.png`.
 
@@ -57,7 +57,7 @@ Let's make adjustments to the global menu template to make it look more beautifu
 
 To continue, go to the component directory `app`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/
 ```
 Working with customer data requires a service that can access the API.
 
@@ -79,7 +79,7 @@ Let's start filling the functionality in the additional application for working 
 
 To continue, go to the component directory `client-list`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/client-list/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/client-list/
 ```
 Next, we create a component to display the title in the customer list.
 
@@ -110,7 +110,7 @@ Since the image file was added to the resources of the additional application `a
 Add copying of resource files of the additional application `app-client` to the resulting resource directory of the main application `crm-simple`.
 
 Modifying the file `angular.json`:\
-_/home/alexey/ws_ts3/crm-simple1/angular.json_
+_/home/alexey/ws_ts3/crm-simple2/angular.json_
 ```json
 {
   "projects": {
@@ -145,7 +145,7 @@ A simple solution is proposed to avoid such conflicts. Add another directory (fo
 After that, in the project file `angular.json` you need to add a block to copy the resources of each additional application.
 
 Modifying the file `angular.json`:\
-*/home/alexey/ws_ts3/crm-simple1/angular.json*
+_/home/alexey/ws_ts3/crm-simple2/angular.json_
 ```json
 {
   "projects": {
@@ -178,7 +178,7 @@ When you initially plan to use a resource file in two additional applications, i
 
 To continue, go to the directory of the additional application `app-client`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/client-list/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/client-list/
 ```
 Previously, a `c-l-header` component was created to display the header. Next, we create a component to display the middle part of the `c-l-middle`.
 
@@ -199,7 +199,7 @@ A more rational solution is to move the organization of subscription / unsubscri
 
 To continue, go to the component directory `client-view`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/client-view/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/client-view/
 ```
 Next, we create a component to display the title.
 
@@ -241,7 +241,7 @@ Let's do a similar job in the additional task management application.
 
 To continue, go to the directory of the additional application `app-task`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/
 ```
 An additional application for working with tasks provides the user with the following capabilities:
 - view the list of tasks;
@@ -249,7 +249,7 @@ An additional application for working with tasks provides the user with the foll
 
 To continue, go to the component directory `app`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/src/app/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/src/app/
 ```
 Working with task data requires a service that can access the API.
 
@@ -270,7 +270,7 @@ The additional task application has a `task-list` component that corresponds to 
 
 To continue, go to the component directory `task-list`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/src/app/task-list/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/src/app/task-list/
 ```
 Next, we create a component to display the title in the task list.
 
@@ -293,7 +293,7 @@ Let's add the display of the list of tasks to this component.
 Also in the project file `angular.json` add a block for copying the resources of this additional application.
 
 Modifying the file `angular.json`:\
-*/home/alexey/ws_ts3/crm-simple1/angular.json*
+_/home/alexey/ws_ts3/crm-simple2/angular.json_
 ```json
 {
   "projects": {
@@ -323,7 +323,7 @@ The main task of this component is to prepare all data for its child components.
 
 To continue, go to the component directory `task-view`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/src/app/task-view/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/src/app/task-view/
 ```
 Next, we create a component to display the title.
 

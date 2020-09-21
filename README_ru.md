@@ -17,10 +17,10 @@
 - Менеджер пакетов _npm_ версии 6.14.8 или более поздняя;
 - _Angular_ версии 10 или более поздняя;
 
-Создать каталог для проекта  перейти в него:
+Создать каталог для проекта перейти в него:
 ```bash
-$ mkdir /home/alexey/ws_ts3/crm-simple1/
-$ cd /home/alexey/ws_ts3/crm-simple1/
+$ mkdir /home/alexey/ws_ts3/crm-simple2/
+$ cd /home/alexey/ws_ts3/crm-simple2/
 ```
 Копируем в него файлы проекта из предыдущей статьи [github-crm-simple1](https://github.com/alx-melnichuk/crm-simple1). При этом можно удалить файлы `img-*.png`.
 
@@ -58,7 +58,7 @@ _./angular.json_
 
 Для продолжения переходим в каталог компонента `app`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/
 ```
 Для работы с данными о клиентах требуется сервис, который может обращаться к API.
 
@@ -80,7 +80,7 @@ $ cd ..
 
 Для продолжения переходим в каталог компонента `client-list`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/client-list/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/client-list/
 ```
 Далее создаем компонент для отображения заголовка в списке клиентов.
 
@@ -111,7 +111,7 @@ GET http://localhost:4250/assets/img/logo-client.png 404 (Not Found)
 Добавим копирование файлов ресурсов дополнительного приложения `app-client` в результирующий каталог ресурсов основного приложения `crm-simple`.
 
 Модифицируем файл `angular.json`:\
-_/home/alexey/ws_ts3/crm-simple1/angular.json_
+_/home/alexey/ws_ts3/crm-simple2/angular.json_
 ```json
 {
   "projects": {
@@ -146,7 +146,7 @@ $ npx ng build
 После этого в файле проекта `angular.json` требуется добавить блок для копирования ресурсов каждого дополнительного приложения.
 
 Модифицируем файл `angular.json`:\
-*/home/alexey/ws_ts3/crm-simple1/angular.json*
+_/home/alexey/ws_ts3/crm-simple2/angular.json_
 ```json
 {
   "projects": {
@@ -179,7 +179,7 @@ background: url("/assets/app-client/img/logo-client.png")
 
 Для продолжения переходим в каталог дополнительного приложения `app-client`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/client-list/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/client-list/
 ```
 Ранее был создан компонент `c-l-header` для отображения заголовка. Далее создаем компонент для отображения средней части `c-l-middle`.
 
@@ -200,7 +200,7 @@ $ npx ng generate component c-l-middle --export=true
 
 Для продолжения переходим в каталог компонента `client-view`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-client/src/app/client-view/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-client/src/app/client-view/
 ```
 Далее создаем компонент для отображения заголовка.
 
@@ -242,7 +242,7 @@ $ npx ng serve --port 4250
 
 Для продолжения переходим в каталог дополнительного приложения `app-task`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/
 ```
 Дополнительное приложение по работе с задачами предоставляет пользователю следующие возможности:
 - просмотреть список задач;
@@ -250,7 +250,7 @@ $ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/
 
 Для продолжения переходим в каталог компонента `app`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/src/app/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/src/app/
 ```
 Для работы с данными о задачах требуется сервис, который может обращаться к API.
 
@@ -271,7 +271,7 @@ $ cd ..
 
 Для продолжения переходим в каталог компонента `task-list`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/src/app/task-list/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/src/app/task-list/
 ```
 Далее создаем компонент для отображения заголовка в списке задач.
 
@@ -294,7 +294,7 @@ $ npx ng generate component t-l-middle --export=true
 Так же в файле проекта `angular.json` добавляем блок для копирования ресурсов данного дополнительного приложения.
 
 Модифицируем файл `angular.json`:\
-*/home/alexey/ws_ts3/crm-simple1/angular.json*
+_/home/alexey/ws_ts3/crm-simple2/angular.json_
 ```json
 {
   "projects": {
@@ -324,7 +324,7 @@ $ npx ng generate component t-l-middle --export=true
 
 Для продолжения переходим в каталог компонента `task-view`:
 ```bash
-$ cd /home/alexey/ws_ts3/crm-simple1/projects/app-task/src/app/task-view/
+$ cd /home/alexey/ws_ts3/crm-simple2/projects/app-task/src/app/task-view/
 ```
 Далее создаем компонент для отображения заголовка.
 
