@@ -1,0 +1,21 @@
+/*# sourceURL=app.component.scss */
+
+:host {
+  display: block;
+  
+  header {
+    padding: 0.5em 1em 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .a-menu-list {
+    display: flex;
+    align-items: center;
+  }
+  .a-logotype {
+    height: 19px;
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+}

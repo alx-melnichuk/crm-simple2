@@ -1,0 +1,19 @@
+/*# sourceURL=c-l-middle.component.scss */
+
+:host {
+  display: block;
+  padding: 0.3em 0.3em;
+
+  .c-l-m-wrap {
+    height: 37em;
+    overflow: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  tr.mat-row {
+    cursor: pointer;
+  }
+}
